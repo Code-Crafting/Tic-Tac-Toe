@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color: #012f40;
+    --border-color: #40b2db;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+    background-color: var(--bg-color);
+    font-family: sans-serif, Geneva, Tahoma;
+}
+h1{
+    color: white;
+    letter-spacing: 2px;
+    font-family: "Playwrite GB S", cursive;
+}
+.container:hover{
+    cursor: pointer;
+}
+.area{
+    display: flex;
+}
+.box{
+    width: 5rem;
+    aspect-ratio: 1;
+    margin: .2rem;
+    background-color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+.restart{
+    margin-top: 2rem;
+    background-color: var(--border-color);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+    padding: .5rem 1rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.winner{
+    margin-bottom: 2rem;
+    margin-top: rem;
+    color: white;
+    font-size: 1.5rem;
+}
